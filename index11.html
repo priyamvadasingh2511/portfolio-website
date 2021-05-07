@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Portfolio site</title>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style11.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="index11.html">home</a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="about.html">about</a>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="name">
+					PUTUL
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/media.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo1.png" alt="">
+						</div>
+						<div class="subtitle">Do not always believe what we show you.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/singing.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo2.png" alt="">
+						</div>
+						<div class="subtitle">My hoby is singing.I would like to be professional singer.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/dancing.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo3.png" alt="">
+						</div>
+						<div class="subtitle">Dance makes me happy.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/cooking.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo4.png" alt="">
+						</div>
+						<div class="subtitle">I enjoy cooking and making innovative recepies.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/business.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo5.png" alt="">
+						</div>
+						<div class="subtitle">Opening my new bussiness very soon.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/writer.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo6.png" alt="">
+						</div>
+						<div class="subtitle">Published my new book.Hurry! go check it out.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/acting.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo7.png" alt="">
+						</div>
+						<div class="subtitle">Looking for screenplay roles.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/blogger.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo8.png" alt="">
+						</div>
+						<div class="subtitle">New blog about Indian economy is out.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/yoga.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo9.png" alt="">
+						</div>
+						<div class="subtitle">New video is out.Check it out and let me know what you think.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/coding.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo10.png" alt="">
+						</div>
+						<div class="subtitle">Coding bootcamp and learning management system.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/event.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo11.png" alt="">
+						</div>
+						<div class="subtitle">Contact us for any special occasion.</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="img-background" style="background-image: url(images/photography.jpg)"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logos/logo12.png" alt="">
+						</div>
+						<div class="subtitle">Need a professional photoshoot?Contact us.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+	<script>
+		const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  		portfolioItems.forEach(portfolioItem=>{
+  			portfolioItem.addEventListener('mouseover',()=>{
+  				
+  				portfolioItem.childNodes[1].classList.add('image-blur');
+  			});
+  			
+  			portfolioItem.addEventListener('mouseout',()=>{
+  				
+  				portfolioItem.childNodes[1].classList.remove('image-blur');
+  			});
+
+  		});
+
+
+
+	</script>
+</html>

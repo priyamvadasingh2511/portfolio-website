@@ -1,0 +1,109 @@
+body{
+	margin-right: 0px;
+	font-family: 'Architects Daughter', cursive;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+ /*nav_wrapper*/
+.nav-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+.left-side{
+	display: flex; /*to bring home and about side by side*/
+	}
+.left-side > div{
+	margin-right: 20px; /*to add space between homea nd about*/
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.nav-link-wrapper{
+	height: 22px;
+	border-bottom: 1 px solid transparent;
+	transition:border-bottom 0.5s;
+
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper :hover{
+	border-bottom: 1px solid black;
+
+}
+ .nav-link-wrapper a:hover {
+  color: black;
+}
+.active-nav-link{
+	border-bottom: 1px solid black;
+}
+.active-nav-link a{
+	color: solid black!important;
+}
+/*portfolio-wrapper*/
+.portfolio-items-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+	position: relative; /*moving photo from its current position without affecting actual layout*/
+}
+.img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.logo-wrapper img{ /*shrinking the logos*/
+	width: 80px;
+	margin-bottom: 20px; /*text will appear 20px below logo*/
+}
+.img-text-wrapper{
+	transition: 1s;
+	font-weight: 600;
+	color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+	font-weight: 600;
+	color: lightseagreen;
+}
+.image-blur{
+	transition: 1s;
+	filter: brightness(10%);
+}
+.two_coloumn-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+.text-wrapper{
+	padding: 20px;
+}
+.text-wrapper h1{
+	color:lightseagreen;
+}
+.profile-wrapper img{
+	width: 100%;
+}
+
+
+
